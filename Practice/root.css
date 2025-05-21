@@ -1,0 +1,50 @@
+:root{
+    --shop-color-bg: #ffffff;
+    --shop-color-main: #333333;
+    --shop-color-text: #121212;
+    --shop-color-title: #121212;
+    --shop-color-hover: #000000;
+    --shop-color-button: #333333;
+    --shop-color-button-text: #ffffff;
+    --shop-color-border: #e7e7e7;
+    --header-bg: #ffffff;
+    --header-color-text: #333333;
+    --topbar-bg: #101010;
+    --topbar-color-text: #ffffff;
+    --home-coupon-bg: #ffffff;
+    --home-coupon-light: #ffffff;
+    --home-coupon-border: #f8d0d3;
+    --home-coupon-text: #333333;
+    --footer-bg-color-1: #1a1a1a;
+    --footer-bg-color-2: #000000;
+    --footer-bg-color-copyright: #000000;
+    --footer-color-title: #eeeeee;
+    --footer-color-text: #d3d3d3;
+    --footer-color-hover: #ffffff;
+    --home-flashsale-bg: #faefec;
+    --home-flashsale-color-title: #333333;
+    --home-flashsale-color-light: #e70505;
+    --home-flashsale-countdown-bg: #e70505;
+    --home-flashsale-countdown-color-txt: #ffffff;
+}
+a{
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--shop-color-text: #121212);
+}
+body{
+    color: var(--shop-color-text);
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.footer{
+    color: var(--footer-color-text);
+}
