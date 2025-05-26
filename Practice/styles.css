@@ -525,20 +525,24 @@ input:focus {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    width: 15.66666667%;
-    height: 298px;
-    padding: .3125rem;
-    margin: 4.1px;
+    width: 18.66666667%;
+    height: 351px;
+    padding: -0.6875rem;
+    margin: 7.1px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     background-color: #f0f0f0;
 }
 .squard_item{
     position: relative;
-    margin-top: -20px;
-    padding-bottom: 35px;
+    margin-top: -22px;
+    padding-bottom: 12px;
 }
-
+.squard_item img{
+    width: 222px;
+    height: 265px;
+    object-fit: cover;  
+}
 /* search */
 .sider_search_show{
     position: fixed;
@@ -686,4 +690,46 @@ input:focus {
 }
 .sider_search_show.active{
     display: block;
+}
+/* viết cho chuyển trang */
+.list_page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.page_conttroler{
+    font-size: 2.55rem;
+    height: 1.875rem;
+    margin-left: .9375rem;
+    margin-right: .9375rem;
+    min-width: 2.5rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    
+}
+.button_icon_nav svg{
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+}
+.pagination{
+    padding: 20px;
+    background-color: #fff;
+    
+}
+.pagination a{
+    padding: 12px 20px;
+}
+.page_button{
+    font-size: 20px;
+    padding: 12px 20px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, .4);
+}
+.page_button.current {
+    background-color: #EE4D2D;
+    color: #fff;
+    
 }

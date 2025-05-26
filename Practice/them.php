@@ -13,10 +13,10 @@
         <div class="contain_them">
         <form action="xuly.php" method="post" style="max-width: 400px; margin: auto;">
             <h2>Thêm sản phẩm</h2>
-            <div style="margin-bottom: 12px;">
+            <!-- <div style="margin-bottom: 12px;">
                 <label for="productCode">Mã sản phẩm</label><br>
                 <input type="text" id="productCode" name="productCode" autocomplete="off" style="width: 100%; padding: 8px;" >
-            </div>
+            </div> -->
 
             <div style="margin-bottom: 12px;">
                 <label for="productName">Tên sản phẩm</label><br>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="users.css">
+    <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -139,9 +139,29 @@
                 </button>
 
                 <button class="header_next_link" id="site_search" aria-label="gio_hang" title="gio_hang">
-                    <span class="box_icon">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                    </span>
+                    <a href="tests.php">
+                        <span class="box_icon">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </span>
+                        <span class="count_holer">
+                             <span class="count">
+                                <?php 
+                                    $conn = mysqli_connect('localhost','root','','form'); //
+                                    if(!$conn){
+                                        die("Kết nối thất bại".mysqli_connect_error());
+                                    }
+                                    $total_orders = mysqli_query($conn,"SELECT COUNT(*) AS total from orders");
+                                    if($total_orders){
+                                        $row = mysqli_fetch_assoc($total_orders);
+                                        echo $row['total'];
+                                    }else{
+                                        
+                                    }
+                                    $conn->close();
+                                ?>
+                             </span>                               
+                        </span>
+                    </a>
                 </button>
             </div>
             

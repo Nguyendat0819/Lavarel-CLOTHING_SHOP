@@ -200,29 +200,31 @@
                                 $password = $_POST['password'] ?? '';
                                 $date = $_POST['date'] ?? '';
                                 $stmt = mysqli_prepare($conn, "INSERT INTO dki(name, email, password, date) VALUES (?, ?, ?, ?)");
+                                
                                 if($stmt){
                                     mysqli_stmt_bind_param($stmt,"ssss", $name, $email, $password, $date);
                                     if(mysqli_stmt_execute(($stmt))){
                                         echo "Thêm dữ liệu thành công";
+                                        $conn -> query("INSERT INTO customer(customerName) VALUES ('$name')"); // THÊM INSERT VÀO CUSTOMER
                                     }else{
                                         echo "Lỗi khi thực hiện câu lệnh". mysqli_stmt_error($stmt);
                                     }
                                     mysqli_stmt_close($stmt);
-                                }else{
+                                }else{  
                                     echo"Lỗi chuẩn bị truy vấn".mysqli_error($conn);
                                 }
                                 mysqli_close($conn);
                             }
-                        echo $name;
-                        echo "<br>";
-                        echo $email;
-                        echo "<br>";
-                        echo $password;
-                        echo "<br>";
-                        echo $re_password;
-                        echo "<br>";
-                        echo $date;
-                        echo "<br>";
+                        // echo $name;
+                        // echo "<br>";
+                        // echo $email;
+                        // echo "<br>";
+                        // echo $password;
+                        // echo "<br>";
+                        // echo $re_password;
+                        // echo "<br>";
+                        // echo $date;
+                        // echo "<br>";
                     }else{
                         echo "Lỗi dữ liệu: Vui lòng nhập đầy đủ thông tin và xác nhận mật khẩu phải khớp.";
                     }

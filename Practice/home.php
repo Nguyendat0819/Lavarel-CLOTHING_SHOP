@@ -449,7 +449,7 @@
         </div>    
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () { 
         let currentScroll = 0;
         const scrollStep = 352;
         const productList = document.getElementById('productList');

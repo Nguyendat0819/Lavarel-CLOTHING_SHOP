@@ -14,6 +14,7 @@
 
         session_start();
         
+
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $conn = mysqli_connect('localhost','root','','form'); // connect
             if($conn ->connect_error){
