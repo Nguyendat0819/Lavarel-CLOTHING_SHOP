@@ -36,7 +36,7 @@ a{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--shop-color-text: #121212);
+    color: var(--shop-color-text);
 }
 body{
     color: var(--shop-color-text);
