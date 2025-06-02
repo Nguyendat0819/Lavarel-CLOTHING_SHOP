@@ -4,13 +4,14 @@
 **ĐỖ PHƯƠNG NAM VÀ NGUYỄN ĐÌNH ĐẠT**
 
 ## Mô Tả Ứng Dụng
-Hệ thống quản lý nhạc là một ứng dụng web giúp quản lý người dùng, nghệ sĩ, bài hát, thể loại, danh sách phát một cách hiệu quả. Ứng dụng cung cấp các chức năng CRUD, tìm kiếm, sắp xếp cho các đối tượng.
+Ứng dụng web shop bán quần áo cho phép người dùng xem sản phẩm, thêm vào giỏ hàng, đặt mua, quản trị viên có thể quản lý người dùng, sản phẩm, danh mục và đơn hàng một cách hiệu quả.
 
 ## Mục Đích
-- Quản lý thông tin người dùng, nghệ sĩ
-- Quản lý thông tin bài hát
-- Quản lý thông tin thể loại, danh sách phát
-- Cung cấp giao diện người dùng dễ sử dụng
+- Quản lý thông tin người dùng
+- Quản lý thông tin sản phẩm (quần áo)
+- Quản lý danh mục sản phẩm
+- Quản lý đơn hàng và giỏ 
+- Giao diện thân thiện với người dùng
 - Hiển thị dữ liệu hiệu quả thông qua DataTables
 
 ## Công Nghệ
@@ -51,8 +52,8 @@ graph TD;
 ## Deployment
 ### Cài đặt môi trường
 ```sh
-composer create-project laravel/laravel music-management
-cd music-management
+composer create-project laravel/laravel shop
+cd shopshop
 ```
 
 ### Tạo database
@@ -64,9 +65,9 @@ CREATE DATABASE defaultdb;
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_PORT=19017
-DB_DATABASE=defaultdb
-DB_USERNAME=avnadmin
+DB_PORT=3306
+DB_DATABASE=form
+DB_USERNAME=root
 DB_PASSWORD=
 ```
 
