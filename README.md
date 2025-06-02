@@ -28,7 +28,8 @@ Dự án sử dụng các công nghệ sau:
 
 ## Quá Trình Phát Triển Phần Mềm
 ### Sơ Đồ Khối (UML) - Cấu trúc Database
-![Untitled diagram-2025-02-24-085155](https://github.com/user-attachments/assets/400b2703-192c-4873-9bbd-6d5e2f4d6b6b)
+![z6663142104358_209410169ab6c3247196658c569384d8](https://github.com/user-attachments/assets/39c12bcf-ffe1-4ea1-8c92-8d540ca3ecb9)
+
 
 ### Sơ Đồ Chức Năng (Sơ Đồ Thuật Toán)
 ```mermaid
