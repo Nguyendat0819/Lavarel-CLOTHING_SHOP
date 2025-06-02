@@ -34,12 +34,26 @@ Dự án sử dụng các công nghệ sau:
 ### Sơ Đồ Chức Năng (Sơ Đồ Thuật Toán)
 ```mermaid
 graph TD;
-    A[Người dùng truy cập hệ thống] --> B[Chọn module quản lý];
-    B --> C{Chọn chức năng};
-    C --> D[Thực hiện CRUD];
-    C --> E[Xem danh sách];
-    C --> F[Tìm kiếm];
-    C --> G[Sắp xếp];
+    A[Người dùng truy cập hệ thống] --> B[Chọn hành động];
+    B --> C{Loại người dùng};
+
+    C --> D[Khách: Xem sản phẩm];
+    C --> E[Khách: Thêm sản phẩm vào giỏ hàng];
+    C --> F[Khách: Đăng ký / Đăng nhập];
+    F --> G[Khách: Đặt hàng];
+
+    C --> H[Admin: Quản lý sản phẩm];
+    H --> H1[Thêm / Sửa / Xóa sản phẩm];
+    H --> H2[Tìm kiếm sản phẩm];
+    
+    C --> I[Admin: Quản lý danh mục];
+    I --> I1[Thêm / Sửa / Xóa danh mục];
+
+    C --> J[Admin: Quản lý người dùng];
+    C --> K[Admin: Quản lý đơn hàng];
+    K --> K1[Xem đơn hàng];
+    K --> K2[Cập nhật trạng thái đơn hàng];
+
 ```
 
 ## Chu Trình Phát Triển
