@@ -1,4 +1,4 @@
-# Hệ Thống Quản Lý Shop Bán Quân Áo
+# Hệ Thống Shop Bán Quần Áo
 
 ## Được Phát Triển Bởi:
 **ĐỖ PHƯƠNG NAM VÀ NGUYỄN ĐÌNH ĐẠT**
